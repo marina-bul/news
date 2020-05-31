@@ -183,10 +183,6 @@ section {
         margin-right: 29px;
     }
 
-    .review-item:hover {
-        outline: 5px ridge #FF7931;
-        outline-offset: 5px;
-    }
 
 .review-title {
     padding: 0;
