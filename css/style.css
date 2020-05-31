@@ -1,0 +1,332 @@
+﻿
+
+body {
+    min-width: 1440px;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+
+    background-color: white;
+}
+
+.container {
+    width: 1171px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-title {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*BUTTONS*/
+.btn {
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+
+    background-color: #FF7931;
+}
+
+/*HEADER, FOOTER*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    list-style: none;
+}
+
+    .menu a {
+        display: inline-block;
+        padding-bottom: 6px;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+        .menu a:hover {
+            padding-bottom: 4px;
+            border-bottom: 2px solid #FF7931;
+        }
+
+        .menu a:focus {
+            color: #FF7931;
+        }
+
+
+/*HEADER*/
+
+.header-logo img {
+    padding-top: 65px;
+    padding-bottom: 34px;
+}
+
+
+/*MAIN-NEW*/
+.main-new {
+    position: relative;
+    background-color: #000000;
+    background-image: url(../files/Hotel-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-new-wrapper {
+    padding-top: 133px;
+    padding-bottom: 48px;
+}
+
+.main-new-title {
+    margin: 0;
+    margin-bottom: 139px;
+    padding: 0;
+}
+
+    .main-new-title::before {
+        content: "";
+
+        position: absolute;
+        top: 47px;
+        left: calc(50% - 27px);
+
+        width: 55px;
+        height: 55px;
+
+        background-color: #FF7931;
+        background-image: url('../img/gallery_ico 1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    .main-new-link {
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 84px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .main-new-link:hover,
+    .main-new-link:focus {
+        color: #FF7931;
+    }
+
+.main-new-content {
+    margin: 0 auto;
+    max-width: 456px;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+/*REVIEWS*/
+
+.reviews .section-title {
+    padding-bottom: 20px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+}
+
+    .review-item:not(:last-of-type) {
+        margin-right: 29px;
+    }
+
+    .review-item:hover {
+        outline: 5px ridge #FF7931;
+        outline-offset: 5px;
+    }
+
+.review-title {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 11px;
+    text-align: left;
+}
+
+.review-link {
+    font-family: "Playfair Display", "Georgia" serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.review-link:hover,
+.review-link:focus {
+    color: #FF7931;
+}
+
+.review-content {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/*subscribe*/
+
+.subscribe {
+    background: radial-gradient(circle, #ffffff 353px, #F7F7F7 353px);
+    height: 556px;
+}
+
+.subscribe .section-title {
+    padding-top: 33px;
+    padding-bottom: 35px;
+}
+
+.subscribe-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscribe-item {
+    margin-bottom: 24px;
+}
+
+.subscribe-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: "Playfair Display", "Georgia" serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.subscribe-content {
+    min-height: 63px;
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+
+.subscribe-btn {
+    display: inline-block;
+    max-width: 170px;
+    max-height: 47px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding: 11px 30px;
+    border: none;
+}
+
+    .subscribe-btn span::after {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 7px;
+        content: url(../img/Shape.png);
+    }
+
+    .subscribe-btn:hover,
+    .subscribe-btn:focus {
+        background-image: -webkit-linear-gradient(45deg, #FFD700 20%, #FF7931 100%);
+        background-image: -o-linear-gradient(45deg, #FFD700 20%, #FF7931 100%);
+        background-image: -moz-linear-gradient(45deg, #FFD700 20%, #FF7931 100%);
+    }
+
+/*FOOTER*/
+
+
+footer {
+    padding-top: 26px;
+    padding-bottom: 46px;
+    background-color: #575757;
+}
+
+.footer-logo img {
+    padding-bottom: 32px;
+}
+
+.footer-navigation a {
+    color: #ffffff;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 169px;
+    margin: 0 auto;
+    margin-top: 42px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .social-btn:hover,
+    .social-btn:focus {
+        background-color: #FF7931;
+    }
+
+.social-btn-in {
+    background-image: url(../img/instagram_icon.svg);
+}
+
+.social-btn-fb {
+    background-image: url(../img/facebook_icon.svg);
+}
+
+.social-btn-twi {
+    background-image: url(../img/twitter_icon.svg);
+}
